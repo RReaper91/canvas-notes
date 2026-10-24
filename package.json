@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:reset": "supabase db reset"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,8 @@
     "url": "https://github.com/RReaper91/canvas-notes/issues"
   },
   "homepage": "https://github.com/RReaper91/canvas-notes#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "supabase": "^2.122.0"
+  }
 }
